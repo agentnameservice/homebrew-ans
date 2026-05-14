@@ -5,21 +5,21 @@
 class AnsCli < Formula
   desc "Command-line tool for the Agent Name Service (ANS) Registry"
   homepage "https://github.com/godaddy/ans-sdk-go"
-  version "0.1.14"
+  version "0.1.15"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/godaddy/ans-sdk-go/releases/download/v0.1.14/ans-cli_0.1.14_darwin_amd64.tar.gz"
-      sha256 "fbac7f03b6e3017b600abbd2d13be5d1a5000f7506894bc9cfdf9d6eae330ba4"
+      url "https://github.com/godaddy/ans-sdk-go/releases/download/v0.1.15/ans-cli_0.1.15_darwin_amd64.tar.gz"
+      sha256 "2ec11d41b8a5bf65a39d44858c648a38534e596ca198b92b7e3ffd0b3bd991db"
 
       define_method(:install) do
         bin.install "ans-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/godaddy/ans-sdk-go/releases/download/v0.1.14/ans-cli_0.1.14_darwin_arm64.tar.gz"
-      sha256 "4a0d70dc55e5ee33a43d56c688374b606c57319a1871fc7e96b5051cd83e0a48"
+      url "https://github.com/godaddy/ans-sdk-go/releases/download/v0.1.15/ans-cli_0.1.15_darwin_arm64.tar.gz"
+      sha256 "314973007853d01664686beef881e5c6f8fd8f40b32f0138400d449e6db9e9ee"
 
       define_method(:install) do
         bin.install "ans-cli"
@@ -29,15 +29,15 @@ class AnsCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/godaddy/ans-sdk-go/releases/download/v0.1.14/ans-cli_0.1.14_linux_amd64.tar.gz"
-      sha256 "a39e87061c43cab2eb3036bf6caab790129c3ee89e36a23ea518f4785261474f"
+      url "https://github.com/godaddy/ans-sdk-go/releases/download/v0.1.15/ans-cli_0.1.15_linux_amd64.tar.gz"
+      sha256 "5b91e127366abc6a296a352e815c7eca2ca535d7e2ebc16fb1d0bca6c975801e"
       define_method(:install) do
         bin.install "ans-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/godaddy/ans-sdk-go/releases/download/v0.1.14/ans-cli_0.1.14_linux_arm64.tar.gz"
-      sha256 "a1bfdea9418fa54ecf9696fb9ff7d4db2414bbfa7bb137f01c4d2c22ead376ea"
+      url "https://github.com/godaddy/ans-sdk-go/releases/download/v0.1.15/ans-cli_0.1.15_linux_arm64.tar.gz"
+      sha256 "61c3e384104da6b2982d984a144c4bedef4b0404243c8f5a67be5a3e99270e47"
       define_method(:install) do
         bin.install "ans-cli"
       end
