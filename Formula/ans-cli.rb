@@ -5,21 +5,21 @@
 class AnsCli < Formula
   desc "Command-line tool for the Agent Name Service (ANS) Registry"
   homepage "https://github.com/agentnameservice/ans-sdk-go"
-  version "0.1.18"
+  version "0.1.19"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agentnameservice/ans-sdk-go/releases/download/v0.1.18/ans-cli_0.1.18_darwin_amd64.tar.gz"
-      sha256 "9d0be7294738ec4e63fb0d578891c52d0f0a677f7868b5027abfd72591f8a803"
+      url "https://github.com/agentnameservice/ans-sdk-go/releases/download/v0.1.19/ans-cli_0.1.19_darwin_amd64.tar.gz"
+      sha256 "2620fbbdaf19eee78a2053c3cd826582b90cc6dc4e2c35d5e7a25a3181775a68"
 
       define_method(:install) do
         bin.install "ans-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agentnameservice/ans-sdk-go/releases/download/v0.1.18/ans-cli_0.1.18_darwin_arm64.tar.gz"
-      sha256 "2cbf0a41997e849ce6c0208bed477e83348b0c2246ba8de692685f2b6f5c314a"
+      url "https://github.com/agentnameservice/ans-sdk-go/releases/download/v0.1.19/ans-cli_0.1.19_darwin_arm64.tar.gz"
+      sha256 "e37173754f0f2b6b7080c3de31201389969b1c7cd29e57e98ad0fce238ec013b"
 
       define_method(:install) do
         bin.install "ans-cli"
@@ -29,15 +29,15 @@ class AnsCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentnameservice/ans-sdk-go/releases/download/v0.1.18/ans-cli_0.1.18_linux_amd64.tar.gz"
-      sha256 "98b6b9b8f7c35011b94c01501dfb000abe029db0395932bfcd1ec31c09107602"
+      url "https://github.com/agentnameservice/ans-sdk-go/releases/download/v0.1.19/ans-cli_0.1.19_linux_amd64.tar.gz"
+      sha256 "e78972c28f33482a44c57ebafdac41aa5148ae1a63096d3fd857a75aa7a7b39f"
       define_method(:install) do
         bin.install "ans-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentnameservice/ans-sdk-go/releases/download/v0.1.18/ans-cli_0.1.18_linux_arm64.tar.gz"
-      sha256 "618136b7708ba922d4f0f74b8f5d057df8070abdfb4bc907d016fb3b04cbac42"
+      url "https://github.com/agentnameservice/ans-sdk-go/releases/download/v0.1.19/ans-cli_0.1.19_linux_arm64.tar.gz"
+      sha256 "0b13e55d38ff94cf4ea44bdd16c2de260b6312b8f9013d3616b16ad844111e86"
       define_method(:install) do
         bin.install "ans-cli"
       end
